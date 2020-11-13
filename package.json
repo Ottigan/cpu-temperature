@@ -1,0 +1,15 @@
+{
+	"name": "cpu-temp",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "node .\\app\\index.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Ottigan <jmalcans91@gmail.com>",
+	"license": "ISC",
+	"dependencies": {
+		"systeminformation": "^4.30.1"
+	}
+}
