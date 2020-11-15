@@ -14,11 +14,25 @@ A project which displays current CPU temperature in a webpage
     ```bash
     npm i
     ```
-5. Launch the application
+5. If you have a ```Linux``` system you might need to install the linux sensors package to be able to measure temperature e.g.
+   * On Ubuntu and Debian Distros
+        ```bash
+        sudo apt install lm-sensors
+        ```
+   * On Fedora 26 and RPM Linux distros
+        ```bash
+        sdnf install lm_sensors
+        ```
+   * Once the installation is done, run the following commands to check your current hardware specifications.
+        ```bash
+        sudo sensors-detect
+        ```
+    * It will ask you a few questions. Answer Yes for all of them.
+6. Launch the application
     ```bash
     npm start
     ```
-6. Open the link below in your broswer of choice
+7. Open the link below in your broswer of choice
     ```bash
     http://localhost:3000
     ```
