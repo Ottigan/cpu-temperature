@@ -21,7 +21,7 @@ A project which displays current CPU temperature in a webpage
         ```
    * On Fedora 26 and RPM Linux distros
         ```bash
-        sdnf install lm_sensors
+        dnf install lm_sensors
         ```
    * Once the installation is done, run the following commands to check your current hardware specifications.
         ```bash
@@ -32,7 +32,7 @@ A project which displays current CPU temperature in a webpage
     ```bash
     npm start
     ```
-7. Open the link below in your broswer of choice
+7. Open the link below in your browser of choice
     ```bash
     http://localhost:3000
     ```
