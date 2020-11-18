@@ -30,7 +30,7 @@ let lastMinArr = Array();
  * as well as controlling the size of `lastMinArr`
  */
 function updateTemperatureObj(temp) {
-	temperatureData.current = temp;
+	temperatureData.current = Number.parseFloat(temp).toPrecision(3);
 
 	if (lastMinArr.length < 59) {
 		lastMinArr.push(temp);
