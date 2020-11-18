@@ -9,6 +9,7 @@
 	"author": "Ottigan <jmalcans91@gmail.com>",
 	"license": "ISC",
 	"dependencies": {
+		"draggabilly": "^2.3.0",
 		"express": "^4.17.1",
 		"systeminformation": "^4.30.1"
 	},

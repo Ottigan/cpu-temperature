@@ -1,10 +1,25 @@
 'use strict';
 
-const temp = document.getElementById('temp');
+const current = document.getElementById('current');
+const lastMin = document.getElementById('last-min');
+
+// Ability to drag the widget around
+const draggable = new Draggabilly('.draggable', {
+	containment: true,
+});
 
 setInterval(async function () {
 	let response = await fetch('/temp');
 	let responseJson = await response.json();
-	let tempInCelsius = responseJson.celsius;
-	temp.innerText = tempInCelsius;
-}, 3000);
+	let currentData = responseJson.current;
+	let lastMinData = responseJson.lastMinAvg;
+
+	current.innerText = '';
+	lastMin.innerText = '';
+
+	// Blinking effect to prove that it is alive...
+	setTimeout(() => {
+		current.innerText = currentData;
+		lastMin.innerText = lastMinData;
+	}, 100);
+}, 1000);

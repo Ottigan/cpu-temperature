@@ -36,3 +36,11 @@ A project which displays current CPU temperature in a webpage
     ```bash
     http://localhost:3000
     ```
+
+## Limitations
+
+Extremely poor support for Windows machines, based on the motherboard
+and how willing was the manufacturer to provide the needed integration with
+`WMIC` - Windows Management Interface Command...
+
+Bottom line in most cases,  for Windows machines, the provided temperature reading comes from a random sensor which is nowhere near the CPU and rarely if ever updates.

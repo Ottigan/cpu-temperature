@@ -1,10 +1,61 @@
-main {
+body {
 	height: 100vh;
+	margin: 0;
+	padding: 0;
+	background-color: rgb(36, 41, 46);
+	--accent-color: rgb(94, 94, 165);
+	--widget-bg-color: rgb(255, 255, 255);
+}
+
+main {
+	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	font-family: 'Courier New', Courier, monospace;
 }
 
-h2 {
-	font-size: 10rem;
+table {
+	background-color: var(--accent-color);
+	border: 1px solid var(--accent-color);
+	border-spacing: 0px;
+	border-radius: 5px;
+}
+
+thead {
+	color: var(--widget-bg-color);
+}
+
+thead th {
+	height: 25px;
+	padding: 3px;
+}
+
+tbody th {
+	padding: 3px;
+	background-color: var(--widget-bg-color);
+	text-align: left;
+}
+
+tbody td {
+	min-width: 45px;
+	background-color: var(--widget-bg-color);
+	text-align: center;
+	font-weight: 600;
+}
+
+/* 
+ Draggabilly - during dragging
+*/
+table:hover {
+	cursor: pointer;
+}
+
+.draggable.is-pointer-down {
+	background: rgba(165, 174, 180, 0.418);
+	z-index: 2;
+}
+
+.draggable.is-dragging {
+	opacity: 0.7;
 }
