@@ -45,7 +45,7 @@ tbody td {
 }
 
 /* 
- Draggabilly - during dragging
+ Draggabilly - styles for when the widget is being moved
 */
 table:hover {
 	cursor: pointer;

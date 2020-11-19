@@ -23,11 +23,11 @@ A project which displays current CPU temperature in a webpage
         ```bash
         dnf install lm_sensors
         ```
-   * Once the installation is done, run the following commands to check your current hardware specifications.
+   * Once the installation is done, run the following command to check your current hardware specifications.
         ```bash
         sudo sensors-detect
         ```
-    * It will ask you a few questions. Answer Yes for all of them.
+    * It will ask you a few questions. Answer `Yes` for all of them.
 6. Launch the application
     ```bash
     npm start

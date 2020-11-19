@@ -18,8 +18,8 @@ app.get('/temp', function (req, res) {
 
 // Response Object
 let temperatureData = {
-	current: 'Pending',
-	lastMinAvg: 'Pending',
+	current: '...',
+	lastMinAvg: '...',
 };
 
 // Accumulated Temperature readings
@@ -47,8 +47,9 @@ function updateTemperatureObj(temp) {
 // Requesting current CPU temp in celsius
 setInterval(async function cpuData() {
 	try {
-		const temp = await (await si.cpuTemperature()).main;
-		updateTemperatureObj(temp);
+		const tempData = await si.cpuTemperature();
+		const main = tempData.main;
+		updateTemperatureObj(main);
 	} catch (e) {
 		console.log(e);
 	}
